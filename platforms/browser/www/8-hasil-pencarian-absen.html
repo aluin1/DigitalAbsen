@@ -1,0 +1,221 @@
+<div data-page="8-hasil-pencarian-absen" class="page no-swipeback">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+	<div class="left">  
+	  <a href="#" class="  back sliding" style="color:#fff"  >
+          <span class="mdi  mdi-chevron-left"></span> Back
+        </a>
+      </div>
+	  <div class="center sliding">Hasil Pencarian Absensi</div>
+	  </div>
+  </div>
+  
+    <style>
+	  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.375rem;
+    font-size: 18px;
+    line-height: 1;
+    border: 1px solid #047edf!important;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ div.ex3 { 
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+}
+div.ex4 { 
+  width: 100%;
+  height: 650px;
+  overflow: scroll;
+}
+ .popup-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 253, 253, 0);
+    z-index: 0!important;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+
+   label.label-radio input[type="checkbox"]:checked ~ .item-inner, label.label-radio input[type="radio"]:checked ~ .item-inner {
+    background: no-repeat center;
+    background-image: url(images/cek.png)!important;
+    background-position: 90% center;
+    background-position: -webkit-calc(100% - 15px) center;
+    background-position: calc(100% - 15px) center;
+    -webkit-background-size: 13px 10px;
+    background-size: 30px;
+}
+  .list-block textarea{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf!important;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	.hide {
+  display: none;
+}
+ input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0; 
+    top: 0;
+    left: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #047edf!important;
+}
+  </style> 	
+       
+
+  
+  <div class="page-content     main-panel">
+   
+   <div class="content-block   " style="    margin: 60px 0!important;  padding: 0px!important; color: #6d6d72; box-sizing: border-box;"> 
+   
+    <div class="list-block"   >
+	 
+<div class="row">
+            <div class="col-12  ">
+              <div class="card">
+                <div class="card-body"> 
+				 <!--<h4 class="card-title" align="center">Hasil Pencarian:<br> 
+				 </h4>!-->
+				 <div class="d-flex">
+                    <div class="d-flex align-items-center mr-4 text-muted font-weight-light">
+                      <i class="mdi mdi-calendar-text icon-sm mr-2"></i>
+                      <span id="date-from"></span>  
+                    </div>
+                    <div class="d-flex align-items-center text-muted font-weight-light">
+                      <i class="mdi mdi-calendar-text icon-sm mr-2"></i>
+                      <span id="date-to"></span>
+                    </div>
+                  </div>
+				   <br>
+                  <div class="table-responsive">
+                    
+                    <table class="table" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th  >
+                          Tanggal Absen
+                          </th>
+                          <th>
+                            Jam Masuk
+                          </th>
+                          <th>
+                           Jam Keluar
+                          </th>
+                          <th>
+                           Area PEPC
+                          </th>
+                          <th>
+                             Note
+                          </th> 
+                          <th>
+                             Status Absen
+                          </th> 
+                          <th>
+                             Kondisi
+                          </th> 
+                          <th>
+                             Working Report
+                          </th> 
+                        </tr>
+                      </thead>
+                      <tbody id="data-absen-list">
+                         
+                          
+                      </tbody>
+                    </table>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+	 
+	 
+	 
+          </div>
+		  
+		  
+		   
+    </div>
+  </div> 
+
+  </div>
+  
+    

@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "PEPC Digital Attendance",
+  "short_name": "PEPC Digital Attendance",
+  "version": "com.pepc.digital.attendance",
+  "description": "PDA (PEPC DIGITAL ATTENDANCE)",
+  "author": "PT. Pertamina EP Cepu",
+  "icons": [],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

@@ -1,0 +1,181 @@
+<div data-page="7-absen-dalam-pulang-kantor" class="page toolbar-fixed ">
+  <div class="navbar">
+    <div class="navbar-inner">
+	
+	
+    <div class="left">  
+	  <a href="#" class="  back sliding" style="color:#fff"  >
+          <span class="mdi  mdi-chevron-left"></span> Back
+        </a>
+      </div>
+        <div class="center sliding"> Absen Pulang di Dalam Area</div>
+      
+  
+
+
+  </div>
+  </div>
+  
+       
+
+  
+  <div class="page-content   main-panel">
+   
+   <div class="content-block   ">
+  
+  
+  </div> 
+  
+ 
+  <style>
+   
+   label.label-radio input[type="checkbox"]:checked ~ .item-inner, label.label-radio input[type="radio"]:checked ~ .item-inner {
+    background: no-repeat center;
+    background-image: url(images/cek.png)!important;
+    background-position: 90% center;
+    background-position: -webkit-calc(100% - 15px) center;
+    background-position: calc(100% - 15px) center;
+    -webkit-background-size: 13px 10px;
+    background-size: 30px;
+}
+  .list-block textarea{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf!important;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	height: 70px;
+	}
+	.hide {
+  display: none;
+}
+
+
+ .container {
+  display: block;
+  position: relative;
+    padding-left: 55px;
+	margin-bottom: 1.0rem!important;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #047edf!important;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  </style>
+    
+    <div class="list-block"   >
+	 
+<div class="row">
+            
+			
+			<div class="col-12 grid-margin ">
+              <div class="card">
+                <div class="card-body">
+				<h4 class="card-title" style="color:#047edf"> <i style="font-size:20px;" class="mdi mdi-calendar-check" ></i> Tanggal Absen: <span id="date-absen-dalam-kantor"></span></h4>
+                 <h6   style="color:#fe7c96">*tanggal menyesuaikan WIB</h6>
+                 
+                
+                 <h4 class="card-title" style="color:#047edf;text-transform: uppercase;"> <i style="font-size:20px;" class="mdi mdi-check-circle-outline"></i>  Pilih Kondisi Kesehatan:</h4>
+                
+				 
+				  
+				   <div class="d-flex mt-2 align-items-top" id='data-kondisi'> </div> 
+</div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		   
+    </div>
+  </div>
+  
+
+        
+</div>

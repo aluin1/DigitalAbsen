@@ -1,0 +1,228 @@
+ 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<title>PEPC DIGITAL ATTENDANCE</title>
+<!-- Path to Framework7 Library CSS-->
+<link rel="stylesheet" href="css/framework7.ios.css">  
+<link rel="stylesheet" href="css/framework7.ios.colors.css">
+ 
+<!-- Path to your custom app styles-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/my-app.css">  
+
+<link rel="stylesheet" href="css/colors/blue.css"> 
+<link rel="stylesheet" href="custom/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="custom/vendors/css/vendor.bundle.base.css">
+   
+  
+        
+ <link rel="stylesheet" href="custom/css/style1.css"> 
+ <link rel="stylesheet" href="custom/css/style2.css"> 
+	 
+	  
+ <link rel="stylesheet" href="custom/css/leaflet.css"> 
+	 
+ 
+</head>
+<body id="mobile_wrap">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+ 
+ <!--
+<div class="panel panel-left panel-cover">
+  
+  <div class="view view-left navbar-through">
+    <div class="close-panel navbar">
+      <div class="navbar-inner">
+        <div class="left"></div>
+        <div class="center sliding ">Close <i style="font-size:20px;color:#fff" class="mdi mdi-window-close"></i></div>
+      </div>
+    </div>
+    <div class="pages">
+      <div   class="page">
+        <div class="page-content">
+          <div class="content-block-title"> </div>
+          <div class="list-block">
+            <ul>
+               
+              <li><a href="#" class="notif item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title" style="font-size:15px;color:#1bcfb4"> <i style="font-size:20px;" class="mdi mdi-check-circle-outline"></i> Permintaan Approv diterima</div>
+                  </div>
+                </div>
+                </a></li>
+				 <li><a href="#" class=" notif item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title" style="font-size:15px;color:#7d7777"> <i style="font-size:20px;" class="mdi mdi-information-outline"></i> Permintaan Approv pending</div>
+                  </div>
+                </div>
+                </a></li>
+				 <li><a href="#" class=" notif item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title" style="font-size:15px;color:#fe7c96"> <i style="font-size:20px;" class="mdi mdi-close-circle-outline"></i> Permintaan Approv ditolak</div>
+                  </div>
+                </div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+!-->
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+  <div class="view view-left navbar-through">
+    <div class="navbar close-panel">
+      <div class="navbar-inner">
+        <div class="right"></div>
+        <div class="center sliding "> Close <i style="font-size:20px;color:#fff" class="mdi mdi-window-close"></i></div>
+      </div>
+    </div>
+    <div class="pages">
+      <div data-page="index-right" class="page">
+        <div class="page-content">
+          <div class="content-block-title"> </div>
+          <div class="list-block">
+            <ul>
+              
+				  
+	<div id="data-user"></div>
+
+		   <li><a href="#"  class="profil-user item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class=" item-title"><i style="font-size:20px;color:#047edf;margin-right: 10px;" class="mdi mdi-account-card-details"></i> Profil User</div>
+                  </div>
+                </div>
+                </a></li>
+		  
+		 <!-- <li><a href="#"  class="absen-masuk item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class=" item-title"><i style="font-size:20px;color:#047edf;margin-right: 10px;" class="mdi  mdi-login-variant"></i> Absen Masuk</div>
+                  </div>
+                </div>
+                </a></li>
+				
+				  <li><a href="#"  class="absen-keluar item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class=" item-title"><i style="font-size:20px;color:#047edf;margin-right: 10px;" class="mdi  mdi-logout-variant"></i> Absen Keluar</div>
+                  </div>
+                </div>
+                </a></li>
+				
+				  <li><a href="#"  class="absen-approval item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class=" item-title"><i style="font-size:20px;color:#047edf;margin-right: 10px;" class="mdi mdi-checkbox-marked-outline"></i> Approval</div>
+                  </div>
+                </div>
+                </a></li>
+				!-->
+				
+              <li><a href="#"  class="alert-logout item-link close-panel ">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class=" item-title"><i style="font-size:20px;color:#047edf;margin-right: 10px;" class="mdi mdi-logout"></i> Logout</div>
+                  </div>
+                </div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="views">
+  <div class="view view-main">
+    <div class="pages  toolbar-through">
+      <div data-page="index" class="page homepage">
+        <div class="page-content" style="background: linear-gradient(to right, #63cad4, #047edf);">
+          <div class="demo">
+            <div class="login"> 
+			<!-- <div class="col-md-12 grid-margin " style="margin-top:80px">
+              <div class="card">
+                <div class="card-body"> <center style="margin-bottom:30px" ><img src="images/logo-pepc.jpg" width="200"> 	 	</center> 
+	    <h4 class="card-title" align="center">DIGITAL ABSENSI PEKERJA PEPC</h4>
+                </div>
+              </div>
+            </div>
+			
+			!-->
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+<script src="js/jquery-1.10.1.min.js"></script>
+
+<script src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>  
+<script src="js/1-index-login.js"></script>  
+<script src="js/1-homepage.js"></script>  
+<script src="js/2-history-absen.js"></script>  
+<script src="js/3-history-gps.js"></script>   
+<script src="js/3-hasil-history-gps.js"></script>   
+<script src="js/4-history-notifikasi.js"></script>
+<script src="js/5-history-approval.js"></script> 
+<script src="js/5-hasil-history-approval.js"></script> 
+<script src="js/6-profil-user.js"></script> 
+<script src="js/7-absen-luar-kantor.js"></script> 
+<script src="js/7-absen-luar-kantornon.js"></script> 
+<script src="js/7-absen-luar-pulang-kantornon.js"></script> 
+<script src="js/7-absen-luar-pulang-kantor.js"></script> 
+<script src="js/7-absen-luar-wr-kantornon.js"></script> 
+<script src="js/7-absen-dalam-pulang-kantor.js"></script> 
+<script src="js/7-absen-dalam-wr-kantor.js"></script> 
+<script src="js/7-absen-luar-wr-kantor.js"></script> 
+<script src="js/8-hasil-pencarian-absen.js"></script> 
+<script src="js/9-approve-absen.js"></script>  
+<script src="js/10-reject-absen.js"></script> 
+<script src="js/11-request-absen-keluar.js"></script>
+<script src="js/12-fitunfit.js"></script>
+<script src="js/12-edit-fitunfit.js"></script>
+<script src="js/1-landing-page.js"></script>  
+<script src="js/6-edit-data-kesehatan.js"></script> 
+<script src="js/1-quiz-1.js"></script> 
+<script src="js/1-quiz-2.js"></script> 
+<script src="js/1-quiz-2-1.js"></script> 
+<script src="js/1-quiz-3.js"></script> 
+<script src="js/1-quiz-4.js"></script> 
+<script src="js/1-quiz-5.js"></script> 
+<script src="js/1-quiz-6.js"></script> 
+<script src="js/1-quiz-7.js"></script> 
+<script src="js/1-quiz-8.js"></script> 
+<script src="js/1-quiz-9.js"></script> 
+<script src="js/5-edit-absen-reject.js"></script> 
+
+
+<script type="text/javascript" src="cordova.js"></script>   
+<script type="text/javascript" src="js/leaflet.js"></script>   
+
+  <script id="link-google-api" ></script>   
+  
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDysKq9aGoHq2BmAb5ZyF-cZcdlwn8OCCQ"></script>    -->
+
+
+
+   
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<div data-page="12-fitunfitnon" class="page toolbar-fixed ">
+  <div class="navbar">
+    <div class="navbar-inner">
+	
+	
+    <div class="left">  
+	  <a href="#" class="  back sliding" style="color:#fff"  >
+          <span class="mdi  mdi-chevron-left"></span> Back
+        </a>
+      </div>
+        <div class="center sliding"> Kondisi Kesehatan </div>
+      
+  
+
+
+  </div>
+  </div>
+  
+       
+
+  
+  <div class="page-content   main-panel">
+   
+   <div class="content-block   ">
+  
+  
+  </div> 
+  
+ 
+  <style>
+   
+   label.label-radio input[type="checkbox"]:checked ~ .item-inner, label.label-radio input[type="radio"]:checked ~ .item-inner {
+    background: no-repeat center;
+    background-image: url(images/cek.png)!important;
+    background-position: 90% center;
+    background-position: -webkit-calc(100% - 15px) center;
+    background-position: calc(100% - 15px) center;
+    -webkit-background-size: 13px 10px;
+    background-size: 30px;
+}
+  .list-block textarea{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf!important;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	height: 70px;
+	}
+	.hide {
+  display: none;
+}
+
+
+ .container {
+  display: block;
+  position: relative;
+    padding-left: 55px;
+	margin-bottom: 1.0rem!important;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #047edf!important;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  </style>
+    
+    <div class="list-block"   >
+	 
+<div class="row">
+            
+			
+			<div class="col-12 grid-margin ">
+              <div class="card">
+                <div class="card-body">
+				<h4 class="card-title" style="color:#047edf"> <i style="font-size:20px;" class="mdi mdi-calendar-check" ></i> Tanggal Absen: <span id="date-absen"></span></h4>
+                <h6   style="color:#fe7c96">*tanggal menyesuaikan WIB</h6>
+                 
+                 <h4 class="card-title" style="color:#047edf;text-transform: uppercase;"> <i style="font-size:20px;" class="mdi mdi-check-circle-outline"></i>  Pilih Kondisi Kesehatan:</h4>
+                
+				  <!-- <div class="d-flex">
+                    <div class="d-flex align-items-center mr-4 text-muted font-weight-light">
+                      <i class="mdi mdi-account-outline icon-sm mr-2"></i>
+                      <span>PT Pertamina EP Cepu</span>
+                    </div>
+                    <div class="d-flex align-items-center text-muted font-weight-light">
+                      <i class="mdi mdi-clock icon-sm mr-2"></i>
+                      <span>2 Januari 2019</span>
+                    </div>
+                  </div>!-->
+				  
+				   <div class="d-flex mt-2 align-items-top">
+                     
+                    <div class="mb-0 flex-grow"> 
+					 <form class="forms-sample"> 
+	 <ul>
+    <!-- Single radio input -->
+    <li style="
+	border-radius: 50px; 
+    border: 1px solid #047edf!important;margin-bottom: 10px!important; ">
+      <label style="margin-bottom: 0px!important;" class="label-radio item-content" onclick="show1();">
+        <!-- Checked by default -->
+        <input type="radio" name="my-radio" value="1" checked="checked"   >
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Kondisi Fit</div>
+        </div>
+      </label>
+    </li>
+      
+	 
+	
+	<li style=" border-radius: 50px;  border: 1px solid #047edf!important;margin-bottom: 10px!important; ">
+      <label style="margin-bottom: 0px!important;" class="label-radio item-content" onclick="show2();" >
+        <input type="radio"  name="my-radio" value="0"    />
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">Kondisi Tidak Fit</div>
+        </div>
+      </label> 
+      </li>
+  </ul>
+    
+                   
+                  
+			<div id="div1" class="hide">
+   <div class="form-group"> 
+					 
+					  <label class="container">Pilek/Hidung Beringus
+  <input type="checkbox"  class="txtPenyakit" value="Pilek/Hidung Beringus">
+  <span class="checkmark"></span>
+</label>
+<label class="container" >Sakit Kepala
+  <input type="checkbox"  class="txtPenyakit" value="Sakit Kepala">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Batuk
+  <input type="checkbox"  class="txtPenyakit" value="Batuk">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Sakit Tenggorokan
+  <input type="checkbox"  class="txtPenyakit" value="Sakit Tenggorokan">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Demam
+  <input type="checkbox"  class="txtPenyakit" value="Demam" >
+  <span class="checkmark"></span>
+</label>
+   
+  <!-- <label  class="container2"  > -->
+        <!-- <input type="checkbox"   class="txtLain "  onclick="ShowHideDiv()"    /> Lainnya -->
+		  <!-- <!-- <span class="checkmark"></span>   -->  
+    <!-- </label>  -->
+
+ <p style=" margin: 10px 10px 10px 10px !important;">Lainnya:</p>
+  
+         <textarea type="text"   class="form-control txtNote "  ></textarea>
+ 
+	
+	
+	 
+			 
+					</div>
+</div>		  
+			
+                      <button type="button"   class=" btn-proses btn btn-gradient-primary mr-2" ><b style="font-size:15px">Proses</b></button>
+               	</form>
+	 		
+				
+				 
+
+
+					  
+                    </div>
+                    
+                  </div>
+                   
+				  
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		   
+    </div>
+  </div>
+  
+
+        
+</div>
