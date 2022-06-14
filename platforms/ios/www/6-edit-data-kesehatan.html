@@ -1,0 +1,313 @@
+<div data-page="6-edit-data-kesehatan" class="page toolbar-fixed ">
+  <div class="navbar">
+    <div class="navbar-inner">
+	
+	
+    <div class="left">  
+	  <a href="#" class="  back sliding" style="color:#fff"  >
+          <span class="mdi  mdi-chevron-left"></span> Back
+        </a>
+      </div>
+        <div class="center sliding">Edit Data Tambahan</div>
+      
+   
+ <style>
+	  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.375rem;
+    font-size: 18px;
+    line-height: 1;
+    border: 1px solid #047edf!important;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ div.ex3 { 
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+}
+div.ex4 { 
+  width: 100%;
+  height: 650px;
+  overflow: scroll;
+}
+ .popup-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 253, 253, 0);
+    z-index: 0!important;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+
+   label.label-radio input[type="checkbox"]:checked ~ .item-inner, label.label-radio input[type="radio"]:checked ~ .item-inner {
+    background: no-repeat center;
+    background-image: url(images/cek.png)!important;
+    background-position: 90% center;
+    background-position: -webkit-calc(100% - 15px) center;
+    background-position: calc(100% - 15px) center;
+    -webkit-background-size: 13px 10px;
+    background-size: 30px;
+}
+  .list-block textarea{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background: 0 0;
+    resize: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #047edf!important;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	.hide {
+  display: none;
+}
+ input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0; 
+    top: 0;
+    left: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #047edf!important;
+}
+.table th img, .table td img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+} 
+  </style>  
+
+  </div>
+  </div>
+  
+       
+
+  <div class="page-content"> 
+    <div class="list-block"   >
+	 <div class="row">
+
+            <div class="col-md-12 grid-margin " style="margin-top:50px">
+              <div class="card">
+                <div class="card-body" >  
+                    
+		 <table class="table " >
+  <tr><td style="padding:10px!important" colspan="3" class="btnDelete">Nomor Handphone :
+  <br><br><input type="number" id="Vphone"  class="form-control txtPhone" style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;"/></td></tr>
+  <tr><td style="padding:10px!important" colspan="3">Apakah Anda sudah Vaksin?  
+  <select id="VstatVaksin"  class="form-control txtStatVaksin"  style="margin-top: 10px;height: calc(2rem + 2px);">
+  <option value="">Pilih:</option>
+  <option value="Sudah" >Sudah</option>
+  <option value="Belum">Belum</option> 
+</select>  
+  </td></tr> 
+  
+  <tr>
+  <td style="    text-align: right;" >
+  <label data-popup=".popup-about" class="open-popup  badge badge-info"  >Tambah Data Vaksin</label>
+  </td>
+  </tr> 
+  </table>
+  
+  
+   
+  <div class="table-responsive">
+   
+<table class="table" style="width:100%">
+ <td  style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;" ><b><center>Action</center></b> </td> <td  style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;" ><b>Vaksin ke</b> </td><td style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;"  ><b>Nama Vaksin </b> </td><td style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;"  width="30%"><b>Tanggal Vaksin</b></td></tr>
+		 
+   <tbody id="data-vaksin"></tbody>
+		
+</table>	 </div>	 
+	
+	
+  <table class="table">
+   <tr>
+  <td style="    text-align: right;" >
+  <label data-popup=".popup-keluarga" class="open-popup badge badge-info"  >Tambah Data Vaksin Keluarga</label>
+  </td>
+  </tr> 
+  </table>
+  <div class="table-responsive">
+   
+<table class="table" style="width:100%">
+ <td  style="padding:10px!important; background-color: #757575; color: #fff;" ><b><center>Action</center></b> </td> <td  style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;" ><b>Vaksin ke</b> <td  style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;" ><b>Nama</b> </td> </td><td style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;"  ><b>Nama Vaksin </b> </td><td style="padding:10px!important; background-color: #757575; color: #fff;font-size: 12px;"  width="30%"><b>Tanggal Vaksin</b></td></tr>
+		 
+   <tbody id="data-vaksin-kel"></tbody>
+		
+</table>	 </div>	 	
+	
+	 <table class="table " >
+	 <!--  <tr><td style="padding:10px!important"><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="number" id="txtvaksinke"  class="form-control txtvaksinke" /></td><td style="padding:10px!important" ><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="text" id="txtVakName"  class="form-control txtVakName" /></td><td style="padding:10px!important"><input type="date" style="height: calc(2rem + 2px);" id="txtDate"  class="form-control txtDate" /></td></tr>
+		<tr><td ></td><td  colspan="2"> <button type="button"   class=" btn-add-vaksin btn btn-gradient-primary" style="margin-bottom: 10px;" ><b style="font-size:15px">Tambah Data Vaksin</b></button> </td></tr>
+		
+		<tr><td ></td><td  colspan="2"> <button type="button" data-popup=".popup-about"   class="open-popup btn btn-gradient-primary" style="margin-bottom: 10px;" ><b style="font-size:15px">Tambah Data Vaksin</b></button> </td></tr>
+!-->
+
+  <tr><td style="padding:10px!important" colspan="3">Apakah Anda Pernah terpapar Covid-19? 
+  <br>
+   <select id="VstatCovid" class="form-control txtStatCovid"  style="margin-top: 10px;height: calc(2rem + 2px);">
+  <option value="">Pilih:</option>
+  <option value="Ya">Ya</option>
+  <option value="Tidak">Tidak</option> 
+</select> 
+  </td></tr>
+  <tr><td style="padding:10px!important" colspan="3">Apa Golongan Darah Anda? 
+  <br>
+  
+   <select id="VgolDar" class="form-control txtGolDarah"  style="margin-top: 10px;height: calc(2rem + 2px);">
+  <option value="">Pilih:</option>
+  <option value="A">A</option>
+  <option value="B">B</option> 
+  <option value="O">O</option> 
+  <option value="AB">AB</option> 
+</select> </td></tr>
+  <tr><td style="padding:10px!important" colspan="3">Apa Rhesus Anda? 
+  <br>
+  <select id="Vrhesus"  class="form-control txtRhesus"  style="margin-top: 10px;height: calc(2rem + 2px);">
+  <option value="">Pilih:</option>
+  <option value="Tidak Tahu">Tidak Tahu</option>
+  <option value="Positif (+)">Positif (+)</option> 
+  <option value="Negatif (-)">Negatif (-)</option>
+</select>  </td></tr>
+  <tr><td style="padding:10px!important" colspan="3"><button type="button" name="submit" class="btnadd btn btn-gradient-primary mr-2" ><b style="font-size:15px">Simpan</b></button></td></tr>
+  </table>
+  </div> 
+              
+</div>
+</div>
+          
+  </div>
+  </div>
+</div>
+ 
+  
+<div class="popup popup-about" style="    background-color: #fff;">
+    <div class="content-block">
+     <center> <h4>Tambah Data Vaksin</h4></center>
+      <p style="text-align: right;"><a href="#" class="close-popup"   ><label class=" badge badge-danger"   > Close</label></a></p> 
+	  
+	  <table class="table" border="0">
+	  <tr>
+	  <th style="padding:10px!important">Vaksin Ke:</th>
+	  <th><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="number" id="txtvaksinke"  class="form-control txtvaksinke" /></th>
+	  </tr>
+	  <tr>
+	  <th style="padding:10px!important">Nama Vaksin:</th>
+	  <th><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="text" id="txtVakName"  class="form-control txtVakName" /></th>
+	  </tr>
+	  <tr>
+	  <th style="padding:10px!important">Tanggal Vaksin</th>
+	  <th><input type="date" style="height: calc(2rem + 2px);padding: 10px;" id="txtDate"  class="form-control txtDate" /></th>
+	  </tr>
+	  <tr> 
+	  <th></th>
+	  <th   > <button type="button"   class=" btn-add-vaksin btn btn-gradient-primary" style="margin-bottom: 10px;" ><b style="font-size:15px">Simpan</b></button></th>
+	  </tr>
+	  </table>
+    </div>
+  </div>
+		    
+
+<div class="popup popup-keluarga" style="    background-color: #fff;">
+    <div class="content-block">
+     <center> <h4>Tambah Data Vaksin Keluarga</h4></center>
+      <p style="text-align: right;"><a href="#" class="close-popup"   ><label class=" badge badge-danger"   > Close</label></a></p> 
+	  
+	  <table class="table" border="0">
+	  <tr>
+	  <th style="padding:10px!important">Vaksin Ke:</th>
+	  <th><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="number" id="txtvaksinke_kel"  class="form-control txtvaksinke_kel" /></th>
+	  </tr>
+	  <tr>
+	  <th style="padding:10px!important">Nama Keluarga:</th>
+	  <th><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="text" id="txtnama_kel"  class="form-control txtnama_kel" /></th>
+	  </tr>
+	  <tr>
+	  <th style="padding:10px!important">Nama Vaksin:</th>
+	  <th><input style="outline: 1px solid #1085e1!important;height: calc(2rem + 2px);padding: 10px;" type="text" id="txtVakName_kel"  class="form-control txtVakName_kel" /></th>
+	  </tr>
+	  <tr>
+	  <th style="padding:10px!important">Tanggal Vaksin</th>
+	  <th><input type="date" style="height: calc(2rem + 2px);padding: 10px;" id="txtDate_kel"  class="form-control txtDate_kel" /></th>
+	  </tr>
+	  <tr> 
+	  <th></th>
+	  <th   > <button type="button"   class=" btn-add-vaksin-kel btn btn-gradient-primary" style="margin-bottom: 10px;" ><b style="font-size:15px">Simpan</b></button></th>
+	  </tr>
+	  </table>
+    </div>
+  </div>		  
+		   
+    </div>
+  </div>
+  
+   
+        
+</div>
